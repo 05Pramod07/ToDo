@@ -17,7 +17,7 @@ const HeaderContent = () => {
         messageIncoming.map((todo) => {
             const checkboxStatus = todo.status === "completed" ? "incomplete" : "completed"
             if (todo.id === item.id) {
-				return todo.status = checkboxStatus;
+				todo.status = checkboxStatus;
             }
 			return setMessageIncoming([...messageIncoming]);
 		});
