@@ -19,7 +19,6 @@ const HeaderContent = () => {
             if (todo.id === item.id) {
 				return todo.status = checkboxStatus;
             }
-            console.log("message", messageIncoming)
 			return setMessageIncoming([...messageIncoming]);
 		});
     }
